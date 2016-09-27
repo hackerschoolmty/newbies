@@ -28,8 +28,7 @@ end
 puts "La sumatoria es: #{sumatoria}"
 
 # Obtenemos el promedio de ratings dividiendo la sumatoria entre la cantidad de personas
-promedio = 0.0
-promedio = sumatoria / numero_de_personas # TO-DO: Lograr que haga la división como float
+promedio = sumatoria / numero_de_personas.to_f
 
 puts "El promedio es: #{promedio}"
 
