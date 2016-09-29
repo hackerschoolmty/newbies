@@ -19,29 +19,30 @@ puts numeros
 
 # Ordenar el arreglo con sus elementos del menor al mayor
 
-cantidad_de_elementos.times do
-  a = 0
-  b = 1
-  cont = 0
+a = 0
+cont = 0
+while a <= numeros.length-2 do
+  # cont = 0
   temp = 0
-  while cont < numeros.length do
-    # Si el elemento que está en A es mayor que el elemento que está en B
+  b = a + 1
+  while b <= numeros.length-1 do
     puts numeros.join("|")
-    if numeros[b] != nil and numeros[a] > numeros[b]
+    # Si el elemento que está en A es mayor que el elemento que está en B
+    if numeros[a] > numeros[b]
       # Hacemos el swap
       temp = numeros[a]
       numeros[a] = numeros[b]
       numeros[b] = temp
     end
-    a += 1
     b += 1
     cont += 1
   end
-  puts "Concluye ciclo"
+  a += 1
 end
 
 puts "Nuestro arreglo ordenado del menor al mayor"
 puts numeros
+puts "Pasadas totales: #{cont}"
 
 
 
