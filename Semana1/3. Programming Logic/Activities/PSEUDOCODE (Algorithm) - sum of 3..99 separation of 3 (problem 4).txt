@@ -1,0 +1,18 @@
+var int limite_inferior = 3
+var int limite_superior = 99
+var int separacion = 3
+
+var int suma = 0
+
+if limite_inferior <= limite_superior
+	suma = suma + limite_inferior
+	limite_inferior = limite_inferior + separacion
+	goto 7
+else
+	output 'Quieres respetir?'
+	input var respuesta
+	if respuesta == 'Y'
+		goto 1
+
+output suma
+output 'Gracias por usarme!'

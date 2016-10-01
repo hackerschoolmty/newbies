@@ -1,0 +1,39 @@
+Print 'Give me a number between 1 and 50'
+input valor
+
+while valor < 1 OR valor > 50 {
+	Print 'Esto esta mal, dame un valor número PEN...!'
+	input valor
+}
+
+int renglon = 1
+asteriscos = "*"
+
+while renglon <= valor {
+	print asteriscos
+	breaks line
+	renglon = renglon + 1
+	asteriscos júntale "*"
+}
+
+*
+**
+
+
+
+==================
+
+
+int renglon = 1
+int columna = 1
+while renglon <= valor {
+	while columna <= renglon {
+		Print '*'
+		columna = columna + 1
+	}
+	breaks line
+	renglon = renglon + 1
+	columna = 1
+}
+
+

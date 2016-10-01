@@ -1,0 +1,11 @@
+input int n
+int contador = 0, numero = n
+
+while ( n != 0) {
+    n = n / 10
+    contador++
+}
+
+Print numero + "has" + contador + "digits"
+
+n = 17

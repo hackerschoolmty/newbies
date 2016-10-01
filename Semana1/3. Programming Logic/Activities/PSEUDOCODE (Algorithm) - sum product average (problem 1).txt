@@ -1,0 +1,42 @@
+input int numero1
+if numero1 < 0
+	output 'Numero 1 debe ser positivo'
+	input int numero1
+	goto line 4
+
+input int numero2
+if numero2 < 0
+	output 'Numero 2 debe ser positivo'
+	input int numero2
+	goto line 8
+
+input int numero3
+if numero3 < 0
+	output 'Numero 3 debe ser positivo'
+	input int numero3
+	goto line 12
+
+var int suma = 0 
+var int producto
+var float promedio = 0.0
+
+suma = numero1 + numero2 + numero3
+producto = numero1 * numero2 * numero3
+promedio = suma / 3
+
+output 'Suma: ' + suma
+output 'Producto: ' + producto
+output 'Promedio: ' + promedio
+
+
+---------------------------
+
+# MODO POCO PRÁCTICO ANTE EL USUARIO DE VALIDAR
+
+if 	numero1 < 0 OR 
+	numero2 < 0 OR 
+	numero3 < 0
+		output 'Numeros deben ser positivos'
+		goto line 1
+
+
