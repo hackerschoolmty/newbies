@@ -1,13 +1,28 @@
-# Imprime los elementos repetidos dentro del arreglo
+# 1. Imprime los elementos repetidos dentro del arreglo
 
-numbers = [10, 25, 10, 38.5, 0, -2]
-#=> 10
+#numbers = [13, 7, 6, 7, 20, -3, 13]
+#=> 13
+#=> 7
 
+numbers = [2, 2, 2, 2]
 
+index = 0
+puts numbers.join(' ')
 
-##############
+while index < numbers.length
+	pivot = numbers[index]
+	delta = index + 1
 
-# Elimina todos elementos repetidos dentro del arreglo
+	while delta < numbers.length
+		if (pivot == numbers[delta])
+			puts "Numero repetido: #{pivot}"
+			numbers.delete_at(delta)
+			delta = delta - 1 
+		end
+		delta = delta + 1
+	end
 
-numbers = [10, 25, 10, 38.5, 0, -2]
-#=> [25, 38.5, 0, -2]
+	index = index + 1
+end
+
+puts numbers.join(' ')
