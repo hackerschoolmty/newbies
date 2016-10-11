@@ -6,3 +6,12 @@
 # Ejemplo:
 #   palindrome("hola") => false
 #   palindrome("anitalavalatina") => true
+
+require_relative "3_strings_al_reves.rb"
+
+def es_palindrome(palabra)
+  return palabra == reverso(palabra)
+end
+
+puts es_palindrome("hola")
+puts es_palindrome("anitalavalatina")
