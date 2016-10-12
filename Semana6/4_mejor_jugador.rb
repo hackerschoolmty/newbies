@@ -13,20 +13,40 @@ cf_monterrey = {
     {
       nombre: "José María Basanta",
       numero: 15,
-      posicion: "Defensa"
+      posicion: "Defensa",
       goles: 2,
     },
     {
       nombre: "Dorlan Pabon",
       numero: 8,
-      posicion: "Delantero"
+      posicion: "Delantero",
       goles: 7,
     },
     {
       nombre: "Aldo De Nigris",
       numero: 9,
-      posicion: "Delantero"
+      posicion: "Delantero",
       goles: 4,
-    }
+    },
+    {
+      nombre: "Funes Mori",
+      numero: 7,
+      posicion: "Delantero",
+      goles: 10,
+    },
   ]
 }
+
+def mejor_jugador(equipo)
+  lider_goleador = nil
+  jugadores = equipo[:jugadores]
+  jugadores.each do |jugador|
+    if lider_goleador == nil or jugador[:goles] > lider_goleador[:goles]
+      lider_goleador = jugador
+    end
+  end
+  return lider_goleador
+end
+
+goleador = mejor_jugador(cf_monterrey)
+puts "(##{goleador[:numero]}) #{goleador[:nombre]}: #{goleador[:goles]} goles"
