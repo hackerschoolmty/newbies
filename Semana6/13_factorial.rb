@@ -6,3 +6,18 @@
 #
 # Ejemplo:
 #   factorial(5) => 120
+
+def factorial(numero)
+  f = 1
+  numero.times do |valor|
+    f = f * (valor + 1)
+  end
+  return f
+end
+
+def factorial_r(numero)
+  return 1 if numero == 1
+  return numero * factorial_r(numero - 1)
+end
+
+puts factorial_r(15)

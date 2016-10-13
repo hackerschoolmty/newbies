@@ -13,3 +13,17 @@
 #                    "título": "Narc",
 #                    "longitud": "4:07"
 #                  }
+
+def llaves_valores(llaves, valores)
+  hash = {}
+  i = 0
+  while i < llaves.length do
+    llave = llaves[i]
+    valor = valores[i]
+    hash[llave] = valor
+    i += 1
+  end
+  return hash
+end
+
+puts llaves_valores(["equipo", "qb", "ciudad"], ["Buffalo", "Tyler Taylor", "Buffalo, NY", "hola"])
