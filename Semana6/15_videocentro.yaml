@@ -1,0 +1,63 @@
+---
+:clientes:
+- :id: 1
+  :nombre: Arturo Santos
+  :rentas:
+  - 9
+- :id: 2
+  :nombre: Fabiola Ramirez
+  :rentas: []
+- :id: 3
+  :nombre: Fernando Vargas
+  :rentas: []
+:peliculas:
+- :id: 1
+  :titulo: The Matrix
+  :anio: 1999
+  :genero: SciFi
+  :rentada: false
+- :id: 2
+  :titulo: The Godfather
+  :anio: 1972
+  :genero: Drama
+  :rentada: false
+- :id: 3
+  :titulo: The Dark Knight
+  :anio: 2008
+  :genero: Action
+  :rentada: false
+- :id: 4
+  :titulo: Fight Club
+  :anio: 1999
+  :genero: Action
+  :rentada: false
+- :id: 5
+  :titulo: Interstellar
+  :anio: 2014
+  :genero: SciFi
+  :rentada: false
+- :id: 6
+  :titulo: Snatch
+  :anio: 2000
+  :genero: Comedy
+  :rentada: false
+- :id: 7
+  :titulo: Blade Runner
+  :anio: 1982
+  :genero: SciFi
+  :rentada: false
+- :id: 8
+  :titulo: 'Mad Max: Fury Road'
+  :anio: 2015
+  :genero: Action
+  :rentada: false
+- :id: 9
+  :titulo: Amores Perros
+  :anio: 2000
+  :genero: Drama
+  :rentada: true
+- :id: 10
+  :titulo: Rocky
+  :anio: 1976
+  :genero: Drama
+  :rentada: false
