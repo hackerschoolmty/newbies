@@ -14,6 +14,11 @@
 - :id: 4
   :nombre: Edgar Sanchez
   :rentas: []
+- :id: 5
+  :nombre: David Brunswick
+  :rentas:
+  - 4
+  - 15
 :peliculas:
 - :id: 1
   :titulo: The Matrix
@@ -34,7 +39,7 @@
   :titulo: Fight Club
   :anio: 1999
   :genero: Action
-  :rentada: false
+  :rentada: true
 - :id: 5
   :titulo: Interstellar
   :anio: 2014
@@ -75,3 +80,18 @@
   :anio: 2012
   :genero: Action
   :rentada: false
+- :id: 13
+  :titulo: Armageddon
+  :anio: 1999
+  :genero: SciFi
+  :rentada: false
+- :id: 14
+  :titulo: Memento
+  :anio: 2000
+  :genero: Drama
+  :rentada: false
+- :id: 15
+  :titulo: Independence Day
+  :anio: 1996
+  :genero: SciFi
+  :rentada: true

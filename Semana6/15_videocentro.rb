@@ -56,6 +56,17 @@ def peliculas_por_genero(genero)
   return peliculas_mismo_genero
 end
 
+def peliculas_rentadas()
+  videocentro = lee_videocentro()
+  rentadas = []
+  videocentro[:peliculas].each do |pelicula|
+    if pelicula[:rentada] == true
+      rentadas.push(pelicula)
+    end
+  end
+  return rentadas
+end
+
 def cliente_por_id(id_cliente)
   videocentro = lee_videocentro()
   videocentro[:clientes].each do |cliente|
