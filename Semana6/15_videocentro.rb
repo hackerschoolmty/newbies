@@ -25,15 +25,39 @@ end
 # Busqueda
 
 def pelicula_por_id(id_pelicula)
+  videocentro = lee_videocentro()
+  videocentro[:peliculas].each do |pelicula|
+    if pelicula[:id] == id_pelicula
+      return pelicula
+    end
+  end
+  return nil
 end
 
 def peliculas_por_anio(anio)
+  videocentro = lee_videocentro()
+  peliculas_mismo_anio = []
+  videocentro[:peliculas].each do |pelicula|
+    if pelicula[:anio] == anio
+      peliculas_mismo_anio.push(pelicula)
+    end
+  end
+  return peliculas_mismo_anio
 end
 
 def peliculas_por_genero(genero)
+  videocentro = lee_videocentro()
+  peliculas_mismo_genero = []
+  videocentro[:peliculas].each do |pelicula|
+    if pelicula[:genero].downcase == genero.downcase
+      peliculas_mismo_genero.push(pelicula)
+    end
+  end
+  return peliculas_mismo_genero
 end
 
 def cliente_por_id(id_cliente)
+  
 end
 
 # Alta
