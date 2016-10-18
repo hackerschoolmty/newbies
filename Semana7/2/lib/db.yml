@@ -1,0 +1,27 @@
+foods:
+  - name: 'Apple'
+    calories: 100
+  - name: 'Hamburger'
+    calories: 1000
+  - name: 'Spaghetti'
+    calories: 800
+exercises:
+  - name: 'Run 5k'
+    weight: 0.1
+  - name: 'Swim 1k'
+    weight: 0.2
+  - name: 'Bike 20k'
+    weight: 0.2
+people:
+  - name: Chema
+    weight: 85
+  - name: Daniel
+    weight: 82
+  - name: Edgar
+    weight: 79
+  - name: Dave
+    weight: 83
+  - name: Katya
+    weight: 60
+  - name: Carlos
+    weight: 80
