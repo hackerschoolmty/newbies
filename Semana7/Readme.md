@@ -6,7 +6,7 @@
 - User inputs the values for the figure
     - Square: Side
     - Rectangle: Side A, Side B
-    - Circle: Radius 
+    - Circle: Radius
 - He selects whether he wants the perimeter or the area
 - Receives result
 
@@ -18,6 +18,8 @@
 
 ## Todo list manager
 - Can create todo-lists (Only by name)
+- Can view todo lists
+- Con view detailed todo list (Name + todos)
 - Can create todos
 - Can mark todos as done
 - Can delete todos

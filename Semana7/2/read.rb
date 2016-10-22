@@ -81,3 +81,5 @@ end
 # Readable code FTW!
   person.workout(run)
   person.eat(apple)
+
+  person.info
